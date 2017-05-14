@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Dravens Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.pic{
+  height: 10px;
+  width: 10px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <img src="Pictures\cmd.png" class="w3-bar-item w3-button w3-theme-l1" height=50 width=50 alt="Smiley face">
+
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="history.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">History</a>
+    <a href="technologies.html" class="w3-bar-item w3-button w3-hide-medium w3-hover-white">Technologies</a>
+    <a href="future.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Future</a>
+  </div>
+</div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Web 2.0</h1>
+      <p>Web 2.0 is how in modern day, the World Wide Web emphasizes user-generated content, usability, and productivity for standard consumers. It does not refer to an update to any technical aspect of the internet, rather, a modern changes in the way Web pages are designed and used.
+</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Pictures\2.0.jpg" class="w3-padding-64 w3-center" height=400 width=350>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-third w3-container">
+      <img src="Pictures\internetofthings.jpg" class="w3-padding-large w3-padding-64 w3-center" height=75% width=85%>
+    </div>
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Internet of Things</h1>
+      <p>Having the internet available on kitchen appliances has only recently become available, but will likley continue growing and expanding to all household appliances. The benefit of linking appliances to the internet is that they can be monitored and changed on any other device that is connected to the internet. This allows interesting possibilities such creating a shopping list on a fridge and viewing it from the store or de-thawing a specific package of meat for dinner later.
+</p>
+    </div>
+    
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Li-Fi</h1>
+      <p> Li-Fi is an alternative way of transmitting internet by using light waves. Traditional Wi-Fi uses radio waves and the benefit of light over sound is that light waves are quicker and able to transmit more bandwidth (Sakshi & Khandal). It also has the added effect of creating light which the developers hope to use in order to replace existing home lighting with their integrated Li-Fi bulbs.
+</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Pictures\lifi.png" class="w3-padding-large w3-padding-64 w3-center" height=75% width=85%>
+    </div>
+  </div>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Draven's 2017 AP English Sr. Project</h4></br>
+      <p> Internet Inner Workings and Applications </p> 
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by AP English</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

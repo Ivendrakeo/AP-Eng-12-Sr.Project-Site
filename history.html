@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Dravens Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.pic{
+  height: 10px;
+  width: 10px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <img src="Pictures\cmd.png" class="w3-bar-item w3-button w3-theme-l1" height=50 width=50 alt="Smiley face">
+
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="history.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">History</a>
+    <a href="technologies.html" class="w3-bar-item w3-button w3-hide-medium w3-hover-white">Technologies</a>
+    <a href="future.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Future</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="history.html">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="history1.html">ARPA</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="history2.html">Internet Today</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Begining</h1>
+      <p>The history of the Internet begins with the development of electronic computers in the 1950s. Initial concepts of packet switching technologies were contracted by the 1960s for network systems, including the development of the ARPA internet project. The first message was sent over a computer from science Professor Leonard Kleinrock's laboratory at University of California  to the second network node at Stanford Research Institute</p>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="Pictures\packetswitch.png" class="w3-border w3-padding-large w3-padding-64 w3-center" height=75% width=85%>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Development</h1>
+      <p>Eventually the research sharing system took off and its support skyrocketed. By 1972 E-mail was developed and used to transmit messages over long distances quickly. Protocols followed suite shortly after and  defined the rules and procedures of the internet. The first included TCP/IP in 1800. By 1986, One of the biggest early developments included the  Domain Name System [DNS] and IP distribution which provided unique device and site identification. ISP’s arose in 1991 and created internet connections on the regional level without the need to ARPA oversight. ARPA shortly after closed the project because their goals were completed and released it to the general public.</p>
+
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Draven's 2017 AP English Sr. Project</h4></br>
+      <p> Internet Inner Workings and Applications </p> 
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+      <p>Powered by AP English</p>
+    </div>
+  </footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
